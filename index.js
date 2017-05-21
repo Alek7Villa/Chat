@@ -12,6 +12,7 @@ var redis = require('redis');
 var cliente = '';
 
 
+
 // Empezamos a leer las credenciales mediante un JSON
 fs.readFile('credenciales.json', 'utf-8', function (err, data) {
     if (err) throw err;
@@ -47,7 +48,7 @@ var usuarios = [];
 var mensajes = [];
 
 
-var puerto = process.env.PORT || 8080;
+var puerto = process.env.PORT || 8081;
 
 // Arrancamos el servidor
 http.listen(puerto, function () {
