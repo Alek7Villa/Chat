@@ -1,6 +1,6 @@
 {
     "usuario": "Alex",
-    "contraseña": "a75f0be6359945a0a50dba68d32418fe",
-    "servidor": "clever-koala-8884.redisgreen.net",
-    "puerto": 11042
+    "contraseña": "cbdredischat",
+    "servidor": "redis-19487.c3.eu-west-1-2.ec2.cloud.redislabs.com",
+    "puerto": 19487
 }

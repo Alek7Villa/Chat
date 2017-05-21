@@ -48,7 +48,7 @@ var usuarios = [];
 var mensajes = [];
 
 
-var puerto = process.env.PORT || 8081;
+var puerto = process.env.PORT || 8080;
 
 // Arrancamos el servidor
 http.listen(puerto, function () {
