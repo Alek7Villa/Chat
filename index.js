@@ -19,7 +19,6 @@ fs.readFile('credenciales.json', 'utf-8', function (err, data) {
     cliente = redis.createClient('redis://' + credenciales.usuario + ':' + credenciales.contraseña + '@' + credenciales.servidor + ':' + credenciales.puerto);
 
     // El cliente de Redis se encontrará preparado
-    cliente.once('ready', function () {
 		console.log('preparado');
         // Limpiamos la base de data (se puede dejar comentado)
         cliente.flushdb();
@@ -37,7 +36,7 @@ fs.readFile('credenciales.json', 'utf-8', function (err, data) {
                 mensajes = JSON.parse(reply);
             }
         });
-    });
+    
 });
 
 // Almacena los usuarios del chat
